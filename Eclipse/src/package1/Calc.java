@@ -53,6 +53,9 @@ public class Calc implements Calculator {
 			case "/":
 				System.out.println( calc.divide(number1, number2));
 				break;
+			case "power":
+				System.out.println( calc.power(number1, number2));
+				break;
 			default:
 				System.out.println("this not the operator expected");
 			}
@@ -61,6 +64,12 @@ public class Calc implements Calculator {
 		{
 			System.out.println("exception raised");
 		}
+	}
+
+	@Override
+	public double power(int number1, int number2) {
+		// TODO Auto-generated method stub
+		return Math.pow(number1, number2);
 	}
 
 }

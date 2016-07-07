@@ -28,6 +28,11 @@ public class Calc implements Calculator {
 		return number1 / number2;
 	}
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Calculator calc =new Calc();
